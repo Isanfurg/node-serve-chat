@@ -51,7 +51,7 @@ async function sellProduct(id){
     )
     console.log(res)
 }
-const conn = await asyncConnection();
+let conn = await asyncConnection();
 let products = await getProducts();
 
 const app = express();
